@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employee Report</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #333333;
+        text-align: center;
+        margin-top: 0;
+      }
+
+      .section {
+        margin-bottom: 20px;
+      }
+
+      .section-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .section-content {
+        border: 1px solid #dddddd;
+        padding: 10px;
+      }
+
+      .employee-details {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      .employee-info {
+        display: inline-block;
+      }
+
+      .employee-info span {
+        font-weight: bold;
+      }
+
+      .score {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .strengths {
+        margin-bottom: 20px;
+      }
+
+      .strength-item {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 5px 10px;
+        background-color: #eaf6ff;
+        border-radius: 3px;
+      }
+
+      .improvement-areas {
+        margin-bottom: 20px;
+      }
+
+      .improvement-area {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+
+      .skill-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+
+      .skill-table th,
+      .skill-table td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #dddddd;
+      }
+
+      .skill-table th {
+        background-color: #f5f5f5;
+        font-weight: bold;
+      }
+
+      .skill-table td:nth-child(2),
+      .skill-table td:nth-child(3),
+      .skill-table td:nth-child(4) {
+        text-align: center;
+      }
+
+      .participants {
+        margin-bottom: 20px;
+      }
+
+      .participant-item {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .button {
+        margin: 0 5px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Employee Report</h1>
+
+      <div class="section">
+        <div class="section-title">Company Name: Assessment Session</div>
+        <div class="section-content">
+          <div class="employee-details">
+            <div class="employee-info">
+              <span>Employee Name:</span> John Doe
+            </div>
+            <div class="employee-info"><span>Employee ID:</span> 123456</div>
+            <div class="employee-info">
+              <span>Employee Email ID:</span> johndoe@example.com
+            </div>
+          </div>
+
+          <div class="employee-info">
+            <span>Employee Department:</span> Marketing
+          </div>
+          <div class="employee-info">
+            <span>Employee Designation:</span> Senior Marketing Executive
+          </div>
+
+          <div class="score">Overall Score: 85%</div>
+
+          <div class="strengths">
+            <div class="section-title">Overall Top 4 Strengths:</div>
+            <div class="strength-item">Creativity</div>
+            <div class="strength-item">Leadership</div>
+            <div class="strength-item">Communication</div>
+            <div class="strength-item">Problem Solving</div>
+          </div>
+
+          <div class="improvement-areas">
+            <div class="section-title">
+              Overall Bottom 4 (Area of Improvement):
+            </div>
+            <div class="improvement-area">
+              <div>Time Management</div>
+              <div>Training</div>
+            </div>
+            <div class="improvement-area">
+              <div>Conflict Resolution</div>
+              <div>Decision Making</div>
+            </div>
+          </div>
+
+          <div class="skill-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Skill Name</th>
+                  <th>Highest Score</th>
+                  <th>Average Score</th>
+                  <th>Your Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Skill 1</td>
+                  <td>90%</td>
+                  <td>80%</td>
+                  <td>85%</td>
+                </tr>
+                <tr>
+                  <td>Skill 2</td>
+                  <td>80%</td>
+                  <td>75%</td>
+                  <td>90%</td>
+                </tr>
+                <tr>
+                  <td>Skill 3</td>
+                  <td>85%</td>
+                  <td>80%</td>
+                  <td>82%</td>
+                </tr>
+                <tr>
+                  <td>Skill 4</td>
+                  <td>92%</td>
+                  <td>88%</td>
+                  <td>87%</td>
+                </tr>
+                <tr>
+                  <td>Skill 5</td>
+                  <td>88%</td>
+                  <td>82%</td>
+                  <td>80%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="participants">
+            <div class="section-title">No. of Participants</div>
+            <div class="participant-item">Same Designation: 50</div>
+            <div class="participant-item">Same Department: 100</div>
+            <div class="participant-item">Across Organisation: 500</div>
+            <div class="participant-item">
+              Same Designation & Different Department: 30
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <a class="button" href="#">Download</a>
+        <a class="button" href="#">View</a>
+        <a class="button" href="#">Email</a>
+      </div>
+    </div>
+  </body>
+</html>
